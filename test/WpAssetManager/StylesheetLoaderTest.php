@@ -19,8 +19,7 @@ class StylesheetLoaderTest extends \WP_UnitTestCase {
     $this->pluginMeta->dir  = getcwd();
     $this->pluginMeta->slug = 'stylesheet-loader-plugin';
     $this->pluginMeta->stylesheetOptions = array(
-      'in_footer' => true,
-      'version' => '0.1.0'
+      'media' => '0.1.0'
     );
 
     $this->container = new Container();

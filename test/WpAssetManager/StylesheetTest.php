@@ -18,8 +18,7 @@ class StylesheetText extends \WP_UnitTestCase {
     $this->pluginMeta->dir  = getcwd();
     $this->pluginMeta->slug = 'stylesheet_plugin';
     $this->pluginMeta->scriptOptions = array(
-      'in_footer' => true,
-      'version' => '0.1.0'
+      'media' => 'screen'
     );
 
     $this->container = new Container();

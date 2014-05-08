@@ -4,6 +4,8 @@ namespace WpAssetManager;
 
 class AssetLoader {
 
+  public $container;
+
   protected $scheduled = array();
   protected $streamed  = array();
   protected $didLoad   = false;
@@ -110,7 +112,7 @@ class AssetLoader {
 
   /* abstract, implementation included for easier testing */
   function assetFor($slug, $options = null) {
-    $asset = $this->container->lookup($this->assetType($slug));
+    $asset = $this->container->lookup($this->assetType());
     $asset->slug = $slug;
 
     if (!is_null($options)) {

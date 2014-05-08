@@ -14,9 +14,9 @@ class AssetLoaderTest extends \WP_UnitTestCase {
     parent::setUp();
 
     $this->pluginMeta       = new PluginMeta();
-    $this->pluginMeta->file = getcwd() . '/my-plugin.php';
+    $this->pluginMeta->file = getcwd() . '/foo-plugin.php';
     $this->pluginMeta->dir  = getcwd();
-    $this->pluginMeta->slug = 'my_plugin';
+    $this->pluginMeta->slug = 'foo_plugin';
     $this->pluginMeta->scriptOptions = array(
       'in_footer' => true,
       'version' => '0.1.0'

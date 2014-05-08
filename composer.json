@@ -1,0 +1,26 @@
+{
+  "name": "dsawardekar/wp-asset-manager",
+  "version": "0.1.0",
+  "type": "library",
+  "description": "Object Oriented Approach to Script & Stylesheet Management in WordPress",
+  "keywords": ["script","stylesheet", "wp_enqueue_script", "wp_enqueue_stylesheet"],
+  "homepage": "http://github.com/dsawardekar/wp-asset-manager",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Darshan Sawardekar",
+      "email": "darshan@sawardekar.org",
+      "homepage": "http://pressing-matters.io",
+      "role": "Developer"
+    }
+  ],
+  "require-dev": {
+    "phpunit/phpunit": "~3.7.0",
+    "dsawardekar/encase-php": "~0.1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "WpAssetManager\\": "lib/WpAssetManager"
+    }
+  }
+}

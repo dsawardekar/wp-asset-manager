@@ -105,8 +105,13 @@ class AssetLoaderTest extends \WP_UnitTestCase {
 
   function test_it_can_stream_scripts() {
     $this->loader->stream('foo');
-    $this->assertTrue($this->loader->isStreamed('foo'));
     $this->assertTrue(wp_script_is('foo', 'enqueued'));
+  }
+
+  function test_it_knows_if_stream_was_previously_streamed() {
+    $this->loader->stream('foo');
+    $this->assertTrue(wp_script_is('foo', 'enqueued'));
+    $this->assertTrue($this->loader->isStreamed('foo'));
   }
 
   function test_it_knows_if_script_is_not_streamed() {

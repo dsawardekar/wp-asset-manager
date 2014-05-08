@@ -7,6 +7,8 @@ class PluginMeta {
   public $file;
   public $slug;
   public $dir;
+  public $scriptOptions;
+  public $stylesheetOptions;
 
   function getFile() {
     return $this->file;
@@ -18,6 +20,14 @@ class PluginMeta {
 
   function getDir() {
     return $this->dir;
+  }
+
+  function getScriptOptions() {
+    return $this->scriptOptions;
+  }
+
+  function getStylesheetOptions() {
+    return $this->stylesheetOptions;
   }
 
 }

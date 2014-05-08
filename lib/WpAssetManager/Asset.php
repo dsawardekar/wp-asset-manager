@@ -50,10 +50,17 @@ class Asset {
 
   function option($key) {
     if (array_key_exists($key, $this->options)) {
-      return $this->options[$key];
+      $value = $this->options[$key];
     } else {
-      return false;
+      $defaults = $this->defaultOptions();
+      if (array_key_exists($key, $defaults)) {
+        $value = $defaults[$key];
+      } else {
+        $value = false;
+      }
     }
+
+    return $value;
   }
 
   function relpath() {
@@ -90,6 +97,10 @@ class Asset {
     $path .= $this->extension();
 
     return $path;
+  }
+
+  function defaultOptions() {
+    return array();
   }
 
 }

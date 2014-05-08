@@ -4,6 +4,8 @@ namespace WpAssetManager;
 
 class AdminScriptLoader extends ScriptLoader {
 
+  public $pluginMeta;
+
   protected $didAdminLoad = false;
 
   function needs() {

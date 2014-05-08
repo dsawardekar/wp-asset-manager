@@ -4,6 +4,8 @@ namespace WpAssetManager;
 
 class AdminStylesheetLoader extends StylesheetLoader {
 
+  public $pluginMeta;
+
   protected $didAdminLoad = false;
 
   function needs() {

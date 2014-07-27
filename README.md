@@ -2,6 +2,9 @@
 
 An Object Oriented Approach to Asset Management in WordPress.
 
+Deprecated. This repo has been merged into
+[Arrow](https://github.com/dsawardekar/arrow).
+
 # Usage
 
 ```php
